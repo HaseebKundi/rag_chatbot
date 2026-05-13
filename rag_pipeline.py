@@ -1,7 +1,7 @@
 from langchain_community.document_loaders import TextLoader
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain.retrievers import EnsembleRetriever  # FIXED: changed from langchain_classic to langchain
+from langchain.retrievers.ensemble import EnsembleRetriever
 from langchain_community.retrievers import BM25Retriever
 from langchain_core.prompts import PromptTemplate
 from langchain_community.vectorstores import FAISS
